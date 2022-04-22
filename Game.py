@@ -17,10 +17,6 @@ def game_on():
     home_screen_turtle.clear()
     game_is_on = True
     print(game_is_on, 'inside the loop')
-    screen.tracer(0)
-    turtle_for_displaying_messages = Turtle()
-    create_screen(turtle_for_displaying_messages)
-    screen.update()
     scoreboard = Scoreboard()
     score = 0
     scoreboard.write_score()
