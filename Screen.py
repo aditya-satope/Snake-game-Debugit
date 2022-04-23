@@ -96,8 +96,10 @@ def home_screen():
                             font=('OCR A Extended', 16, 'normal'), align='center')
     home_screen_turtle.goto(0, 0)
     home_screen_turtle.write("Press Enter to begin", font=('OCR A Extended', 16, 'normal'), align='center')
-    home_screen_turtle.goto(0, -250)
+    home_screen_turtle.goto(0, -100)
     home_screen_turtle.write("Press Tab to view scores", font=('OCR A Extended', 16, 'normal'), align='center')
+    home_screen_turtle.goto(0, -320)
+    home_screen_turtle.write("Instructions to play- \nUse arrow keys to turn the snake.\nThe snake grows on eating food which appear as blue coloured dots.\nThe game ends if the snake's head touches its body.", font=('OCR A Extended', 14, 'normal'), align='center')
 
 
 def return_to_homescreen():
@@ -126,7 +128,7 @@ def score_menu():
     difficulty_turtle.clear()
     score_printing_turtle.clear()
     score_printing_turtle.goto(150, -315)
-    score_printing_turtle.write('Press right arrow key to see High Scores', font=('OCR A Extended', 13, 'normal'),
+    score_printing_turtle.write('Press right arrow key to sort by high score', font=('OCR A Extended', 13, 'normal'),
                                 align='center')
 
     score_printing_turtle.goto(0, 200)
