@@ -138,7 +138,7 @@ def score_menu():
         if row != []:
             scores.append(row)
     for row in scores:
-        print(row)
+
         text = row[0] + '\t' + '\t' + row[1]
         if i == 0:
 
@@ -177,7 +177,6 @@ def highscore():
 
     scores.sort(reverse=True)
     for row in scores:
-        print(row)
         text = row[0] + '\t' + '\t' + row[1]
         if i == 0:
 
