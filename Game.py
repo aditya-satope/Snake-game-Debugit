@@ -14,7 +14,7 @@ def game_on():
     from snake import Snake
     import food
     from scoreboard import Scoreboard,update_score_to_file
-    from Screen import create_screen, game_over, home_screen_turtle, difficulty, difficulty_turtle, return_to_homescreen
+    from Screen import create_screen,score_printing_turtle, game_over, home_screen_turtle, difficulty, difficulty_turtle, return_to_homescreen
     import random, datetime
     screen.onkeypress(None, 'Escape')
     screen.onkeypress(None, '1')
@@ -28,6 +28,7 @@ def game_on():
     game_over_turtle.clear()
     home_screen_turtle.clear()
     difficulty_turtle.clear()
+    score_printing_turtle.clear()
     game_is_on = True
     scoreboard = Scoreboard()
     score = 0
