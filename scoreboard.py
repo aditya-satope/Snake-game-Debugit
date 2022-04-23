@@ -17,3 +17,10 @@ class Scoreboard(Turtle):
     def update_score(self, score):
         self.clear()
         self.write(f'Score = {score}', align='center', font=("Arial", 16, "normal"))
+
+
+def update_score_to_file(date_and_time, score):
+    import csv
+    with open('Scores.csv','a') as f:
+        rec = csv.writer(f)
+        rec.writerow([score, date_and_time])

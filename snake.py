@@ -1,5 +1,5 @@
 from turtle import Turtle
-
+from main import screen
 MOVE_DISTANCE = 20
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0),(-60,0),(-80,0),(-100,0),(-120,0)]
 
@@ -29,24 +29,40 @@ class Snake:
         self.segments[0].fd(MOVE_DISTANCE)
 
     def up(self):
+        screen.onkeypress(None, 'Up')
+        screen.onkeypress(None, 'Right')
+        screen.onkeypress(None, 'Left')
+        screen.onkeypress(None, 'Down')
         if self.segments[0].heading() != 270:
             self.segments[0].setheading(90)
         else:
             pass
 
     def left(self):
+        screen.onkeypress(None, 'Up')
+        screen.onkeypress(None, 'Right')
+        screen.onkeypress(None, 'Left')
+        screen.onkeypress(None, 'Down')
         if self.segments[0].heading() != 0:
             self.segments[0].setheading(180)
         else:
             pass
 
     def right(self):
+        screen.onkeypress(None, 'Up')
+        screen.onkeypress(None, 'Right')
+        screen.onkeypress(None, 'Left')
+        screen.onkeypress(None, 'Down')
         if self.segments[0].heading() != 180:
             self.segments[0].setheading(0)
         else:
             pass
 
     def down(self):
+        screen.onkeypress(None, 'Up')
+        screen.onkeypress(None, 'Right')
+        screen.onkeypress(None, 'Left')
+        screen.onkeypress(None, 'Down')
         if self.segments[0].heading() != 90:
             self.segments[0].setheading(270)
         else:
